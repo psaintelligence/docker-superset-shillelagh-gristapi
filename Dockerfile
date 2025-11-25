@@ -1,8 +1,7 @@
 
 # https://github.com/apache/superset
 # https://hub.docker.com/r/apache/superset/tags
-ARG apache_superset_tag=6.0.0rc2
-
+ARG apache_superset_tag=6.0.0rc3
 
 # Apache Superset
 FROM docker.io/apache/superset:${apache_superset_tag}
@@ -15,6 +14,10 @@ ARG shillelagh_tag=1.4.2
 # https://pypi.org/project/shillelagh-gristapi/#history
 ARG shillelagh_gristapi_tag=0.1.3
 
+# OCI Labels
+LABEL org.opencontainers.image.title="Docker Superset Shillelagh GristAPI"
+LABEL org.opencontainers.image.authors="Nicholas de Jong <ndejong@psaintelligence.ai>"
+LABEL org.opencontainers.image.source="https://github.com/psaintelligence/docker-superset-shillelagh-gristapi"
 
 USER root
 RUN \
