@@ -1,7 +1,7 @@
 
 # https://github.com/apache/superset
 # https://hub.docker.com/r/apache/superset/tags
-ARG apache_superset_tag=6.0.0rc4
+ARG apache_superset_tag=6.0.0
 
 # Apache Superset
 FROM docker.io/apache/superset:${apache_superset_tag}
